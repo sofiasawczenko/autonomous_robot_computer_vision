@@ -2,4 +2,5 @@
 
 Concepção e criação de um robô autônomo com sistema de naveção baseado em visão computacional.
 
-![image](https://user-images.githubusercontent.com/102625995/213512024-35d3309d-7499-46c1-bb81-5d068da75534.png)
+Configurações para a montagem da carcaça:
+![image](https://user-images.githubusercontent.com/102625995/213512193-e9fb21fe-8b2e-4cc8-a5c1-bce0abad373d.png)
