@@ -14,12 +14,17 @@ O objetivo deste projeto é criar um robô autônomo que possa se movimentar de 
 
 - Navegação Autônoma: O sistema de navegação autônoma será implementado no Raspberry Pi, utilizando os dados fornecidos pela visão computacional e os sensores do robô. Com base nessas informações, o robô poderá tomar decisões em tempo real para se movimentar de forma autônoma.
 
-## Estrutura do Repositório
-codigo_fonte/: Esta pasta contém os códigos-fonte do projeto, incluindo tanto o código em Python responsável pela visão computacional e navegação quanto o código em C para o controle dos motores e interação com o Arduino.
+## Como Contribuir
+Contribuições são bem-vindas! Se você deseja melhorar o projeto, corrigir problemas ou adicionar novas funcionalidades, siga as etapas abaixo:
 
-esquemas/: Nesta pasta, você encontrará os esquemas e diagramas de conexão do hardware utilizado no robô, incluindo as ligações entre Raspberry Pi, Arduino e outros componentes.
-
-recursos/: Contém recursos adicionais, como imagens, vídeos ou outros dados relevantes para o projeto.
+1.Faça um fork deste repositório para sua conta do GitHub.
+2.Clone o fork em sua máquina local.
+git clone https://github.com/sofiasawczenko/robot_using_computervision.git
+3.Crie uma branch para suas alterações.
+git checkout -b minha-feature
+4.Faça as alterações desejadas e adicione os arquivos modificados.
+5.Faça um commit das suas alterações.
+6.Faça um push das alterações para o GitHub.
 
 - Configurações para a montagem da carcaça:
 ![image](https://user-images.githubusercontent.com/102625995/213512193-e9fb21fe-8b2e-4cc8-a5c1-bce0abad373d.png)
