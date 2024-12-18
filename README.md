@@ -1,30 +1,38 @@
-# Robô Autônomo com Visão Computacional
+# Autonomous Robot with Computer Vision
 
-Este é um repositório que contém o código-fonte e os recursos necessários para construir um robô autônomo utilizando Python, C, Raspberry Pi e Arduino, com sistema de navegação baseado em visão computacional.
+This repository contains the source code and necessary resources for building an autonomous robot using Python, C, Raspberry Pi, and Arduino. The robot features a navigation system based on computer vision.
 
-## Visão Geral
-O objetivo deste projeto é criar um robô autônomo que possa se movimentar de forma independente em um ambiente, utilizando técnicas de visão computacional para detectar obstáculos e tomar decisões de navegação. O robô será controlado por uma combinação de hardware e software, com o Raspberry Pi responsável pelo processamento de imagem e tomada de decisões, enquanto o Arduino será utilizado para o controle dos motores e sensores.
+## Overview
 
-## Funcionalidades Principais
-- Visão Computacional: O robô será equipado com uma câmera que captura imagens do ambiente, e o algoritmo de visão computacional será responsável por identificar obstáculos, caminhos livres e outras informações relevantes para a navegação.
+The goal of this project is to develop an autonomous robot capable of navigating independently in an environment using computer vision techniques to detect obstacles and make navigation decisions. The robot integrates hardware and software, with the Raspberry Pi handling image processing and decision-making, while the Arduino controls the motors and sensors.
 
-- Controle de Motores: O Arduino será utilizado para controlar os motores do robô, permitindo que ele se movimente para frente, para trás, faça curvas, e outras manobras necessárias para evitar obstáculos e seguir um trajeto pré-definido.
+## Key Features
 
-- Detecção de Obstáculos: Utilizando técnicas de visão computacional, o robô será capaz de identificar obstáculos em seu caminho e tomar decisões para contorná-los ou evitar colisões.
+- **Computer Vision**: Equipped with a camera, the robot captures images of its surroundings. The computer vision algorithm processes these images to identify obstacles, free paths, and other navigation-critical information.
+- **Motor Control**: The Arduino is responsible for motor control, allowing the robot to move forward, backward, turn, and perform other maneuvers to avoid obstacles and follow predefined paths.
+- **Obstacle Detection**: Using advanced computer vision techniques, the robot identifies obstacles and adjusts its movement to avoid collisions.
+- **Autonomous Navigation**: The navigation system on the Raspberry Pi uses input from computer vision and sensors to make real-time decisions, enabling the robot to move autonomously.
 
-- Navegação Autônoma: O sistema de navegação autônoma será implementado no Raspberry Pi, utilizando os dados fornecidos pela visão computacional e os sensores do robô. Com base nessas informações, o robô poderá tomar decisões em tempo real para se movimentar de forma autônoma.
+## Hardware Requirements
 
-## Como Contribuir
-Contribuições são bem-vindas! Se você deseja melhorar o projeto, corrigir problemas ou adicionar novas funcionalidades, siga as etapas abaixo:
+- **Raspberry Pi**: For image processing and navigation logic.
+- **Arduino**: To control motors and read sensor data.
+- **Camera**: For capturing real-time images for computer vision.
+- **Motors and Wheels**: For movement.
+- **Sensors**: Optional for additional obstacle detection.
 
-1.Faça um fork deste repositório para sua conta do GitHub.
-2.Clone o fork em sua máquina local.
-git clone https://github.com/sofiasawczenko/robot_using_computervision.git
-3.Crie uma branch para suas alterações.
-git checkout -b minha-feature
-4.Faça as alterações desejadas e adicione os arquivos modificados.
-5.Faça um commit das suas alterações.
-6.Faça um push das alterações para o GitHub.
+## Software Technologies
+
+- **Programming Languages**: Python, C
+- **Libraries**: OpenCV, Flask, NumPy, GPIO libraries (e.g., RPi.GPIO, gpiozero)
+- **Frameworks**: Flask for web-based robot control
+
+## Getting Started
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/sofiasawczenko/robot_using_computervision.git
+  ```
 
 - Configurações para a montagem da carcaça:
 ![image](https://user-images.githubusercontent.com/102625995/213512193-e9fb21fe-8b2e-4cc8-a5c1-bce0abad373d.png)
