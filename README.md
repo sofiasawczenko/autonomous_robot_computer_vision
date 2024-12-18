@@ -22,6 +22,7 @@ The goal of this project is to develop an autonomous robot capable of navigating
 - **Camera**: For capturing real-time images for computer vision.
 - **Motors and Wheels**: For movement.
 - **Sensors**: Optional for additional obstacle detection.
+- **Car configuration**: ![image](https://user-images.githubusercontent.com/102625995/213512193-e9fb21fe-8b2e-4cc8-a5c1-bce0abad373d.png)
 
 ## Software Technologies
 
@@ -53,7 +54,7 @@ python app.py
 ```
 
 ### 5. Code Snippets
-1. Motor Control with Raspberry Pi
+**1. Motor Control with Raspberry Pi**
 
 
 ```bash
@@ -80,7 +81,7 @@ GPIO.output(LF, False)
 GPIO.cleanup()
 ```
 
-2. Computer Vision for Obstacle Detection
+**2. Computer Vision for Obstacle Detection**
 
 ```bash
 import cv2
@@ -121,9 +122,6 @@ git commit -m "Description of changes"
 ```bash
 git push origin feature-name
 ```
-
-- Car configuration:
-![image](https://user-images.githubusercontent.com/102625995/213512193-e9fb21fe-8b2e-4cc8-a5c1-bce0abad373d.png)
 
 ## Acknowledgments
 This project was inspired by the potential of integrating computer vision with robotics to create efficient autonomous systems.
