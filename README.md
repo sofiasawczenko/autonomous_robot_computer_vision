@@ -31,10 +31,99 @@ The goal of this project is to develop an autonomous robot capable of navigating
 
 ## Getting Started
 
-1. Clone this repository:
-   ```bash
+### 1. Clone this repository:
+
+```bash
    git clone https://github.com/sofiasawczenko/robot_using_computervision.git
 ```
+###  2. Set up your Raspberry Pi and Arduino:
 
-- Configurações para a montagem da carcaça:
+- Flash the appropriate Arduino code for motor and sensor control.
+- Install the required Python libraries on the Raspberry Pi using pip:
+
+```bash
+pip install opencv-python flask numpy
+```
+### 3. Assemble the robot hardware, connecting the Raspberry Pi and Arduino as specified in the configuration.
+
+### 4. Run the Flask server on the Raspberry Pi to control the robot:
+
+```bash
+python app.py
+```
+
+### 5. Code Snippets
+1. Motor Control with Raspberry Pi
+
+
+```bash
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BOARD)
+RF = 12  # Right Forward
+RB = 32  # Right Backward
+LF = 33  # Left Forward
+LB = 35  # Left Backward
+
+GPIO.setup(RF, GPIO.OUT)
+GPIO.setup(RB, GPIO.OUT)
+GPIO.setup(LF, GPIO.OUT)
+GPIO.setup(LB, GPIO.OUT)
+
+# Example movement: forward for 2 seconds
+GPIO.output(RF, True)
+GPIO.output(LF, True)
+time.sleep(2)
+GPIO.output(RF, False)
+GPIO.output(LF, False)
+GPIO.cleanup()
+```
+
+2. Computer Vision for Obstacle Detection
+
+```bash
+import cv2
+
+cap = cv2.VideoCapture(0)
+while True:
+    _, frame = cap.read()
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    # Detect obstacles using a classifier
+    obstacles = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    detected = obstacles.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5)
+    for (x, y, w, h) in detected:
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+    cv2.imshow("Obstacle Detection", frame)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+cap.release()
+cv2.destroyAllWindows()
+```
+
+### How to Contribute
+Contributions are welcome! Follow these steps to contribute:
+
+- Fork this repository.
+- Clone the forked repository:
+```bash
+git clone https://github.com/YOUR_USERNAME/robot_using_computervision.git
+Create a new branch:
+```bash
+git checkout -b feature-name
+```
+- Make your changes and commit:
+```bash
+git add .
+git commit -m "Description of changes"
+```
+- Push your changes and open a pull request:
+```bash
+git push origin feature-name
+```
+
+- Car configuration:
 ![image](https://user-images.githubusercontent.com/102625995/213512193-e9fb21fe-8b2e-4cc8-a5c1-bce0abad373d.png)
+
+## Acknowledgments
+This project was inspired by the potential of integrating computer vision with robotics to create efficient autonomous systems.
