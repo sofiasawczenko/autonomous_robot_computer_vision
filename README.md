@@ -1,5 +1,7 @@
 # Autonomous Robot with Computer Vision
 
+![image](https://github.com/user-attachments/assets/360726dc-57e5-4f55-a249-713dce8f9764)
+
 This repository contains the source code and necessary resources for building an autonomous robot using Python, C, Raspberry Pi, and Arduino. The robot features a navigation system based on computer vision.
 
 ## Overview
@@ -32,7 +34,7 @@ The goal of this project is to develop an autonomous robot capable of navigating
 1. Clone this repository:
    ```bash
    git clone https://github.com/sofiasawczenko/robot_using_computervision.git
-  ```
+```
 
 - Configurações para a montagem da carcaça:
 ![image](https://user-images.githubusercontent.com/102625995/213512193-e9fb21fe-8b2e-4cc8-a5c1-bce0abad373d.png)
